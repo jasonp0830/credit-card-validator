@@ -166,3 +166,22 @@ button {
 #footer a:hover {
     text-decoration: underline;
 }
+
+#siteIcon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+.validator-title {
+    position: fixed;
+    top: 50px;
+    left: 120px;
+    width: auto; /* Adjust size as needed */
+    height: auto;
+    z-index: 1000; /* Ensures it stays on top */
+    color: white;
+}
