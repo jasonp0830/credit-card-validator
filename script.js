@@ -9,6 +9,7 @@ function validateCard() {
 
     if (!/^\d{13,16}$/.test(cardNumber)) {
         validationResult.textContent = "Please enter a valid credit card with 13, 15, or 16 digits.";
+        validationResult.style.color = "red";
         return;
     }
 
@@ -23,9 +24,11 @@ function validateCard() {
 
     if (luhnCheck(cardNumber)) {
         validationResult.textContent = "This card is Valid! It passed the Luhn test.";
+        validationResult.style.color = "green";
     } else {
         validationResult.textContent = "This card is not Valid.";
         networkInfo.textContent = "Type of Payment Network: Invalid";
+        validationResult.style.color = "red";
     }
 }
 
